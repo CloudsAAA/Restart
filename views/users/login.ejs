@@ -1,0 +1,162 @@
+<!-- < % layout("/layouts/boilerplate")  %> -->
+
+<style>
+  h3{
+    color: #000;
+    font-size: large;
+    font-weight: 700;
+    margin-top: 2.5rem;
+  }
+  body{
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .row {
+    background-color: aliceblue;
+    text-align: center;
+    height: 28rem;   
+    width: 23rem;    
+    border-radius: 0.8rem;
+  }
+  .offset {
+    /* background-color: aqua; */
+    height: 55%;
+    padding: 0.9rem;
+    /* border: 1px solid red; */
+  }
+  .btn{
+    border-radius: 0.3rem;
+    width: 15rem;
+    height: 3rem;
+    background-color: rgb(26, 142, 53);
+    color: #fff;
+    border: 0;
+    font-weight: 650;
+    font-size: large;
+  }
+
+  .btn:hover{
+    border-radius: 5rem;
+  }
+
+  .mb-3 {
+    margin: 2rem;
+    /* border: 3px solid rgb(161, 38, 38); */
+  }
+  input{
+    height: 2rem;
+    margin-top: 2px;
+    background-color: transparent;
+    width: 85%;
+    border: 0;
+    border-bottom: 2px solid black;
+  }
+  .logHome{
+    align-items: center;
+    width: 5rem;
+    height: 2rem;
+    margin-top: 2px;
+    background-color: green;
+    color: white;
+    border: 0;
+    font-size: large;
+  }
+  .logHome:hover{
+    border-radius: 4rem;
+  }
+</style>
+
+  <!--  < %= success %>  < %= error %> -->
+
+
+
+<div class="row mt-3">
+  <a href="listings">
+  <button class="logHome">
+
+   HOME
+</button>
+</a>
+    <h3>LogIn on Cloud-Gaming</h3>
+  <div class="col-8 offset">
+   <form action="/login" method="POST" class="needs-validation" novalidate>
+    <div class="mb-3">
+       <lable for="username" class="form-label"></lable> 
+        <input 
+        name="username" 
+        id="username"
+        type="text" 
+        class="form-control" 
+        placeholder="Username"
+        required 
+        /> 
+    </div>
+    
+  <i class="fa-solid fa-house"style="color: white;"></i>
+
+     <!-- password -->
+     <div class="mb-3">
+        <lable for="password" class="form-label"></lable>
+         <input 
+         name="password" 
+         id="password"
+         type="password" 
+         class="form-control" 
+         placeholder="Password"
+         required 
+         /> 
+     </div>
+     <button class="btn">Login</button>
+
+   </form>
+   <br>
+    
+      <p>Not a member?
+        <a href="/signup">Signup</a>
+      </p>
+  </div>
+</div>
+
+<!-- < %= success %>  < %= error %>
+
+<div class="row mt-3">
+    <h3 class="col-6 offset-3">LogIn on Cloud-Gaming</h3>
+  <div class="col-8 offset">
+   <form action="/login" method="POST" class="needs-validation" novalidate>
+    <div class="mb-3">
+       <lable for="username" class="form-label"></lable> 
+        <input 
+        name="username" 
+        id="username"
+        type="text" 
+        class="form-control" 
+        placeholder="Username"
+        required 
+        /> 
+    </div>
+
+     
+     <div class="mb-3">
+        <lable for="password" class="form-label"></lable>
+         <input 
+         name="password" 
+         id="password"
+         type="password" 
+         class="form-control" 
+         placeholder="Password"
+         required 
+         /> 
+     </div>
+     <button class="btn btn-success">Login</button>
+
+   </form>
+   <br>
+    
+      <p>Not a member?
+        <a href="/signup">Signup</a>
+      </p>
+  </div>
+</div> -->
